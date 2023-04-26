@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Travel Guide</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+      <script src="https://kit.fontawesome.com/37e77d9f7e.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/gallery.css')}}">
+    </head>
+    <body style="height:100vh;">
+    <!---HEADER--->
+    
+    <header>
+      <div id="menu-bar" class="fa-solid fa-bars"></div>
+    
+      <a href="{{url_for('home_page')}}" class="logo"> <span>T</span>ravel</a>
+    
+      <nav class="navbar">
+        <a href="{{url_for('home_page')}}">Home</a>
+        <a href="{{url_for('package_page')}}">Packages</a>
+        <a href="{{url_for('services_page')}}">Services</a>
+        <a href="{{url_for('gallery_page')}}"">Gallery</a>
+        <a href="{{url_for('reviews_page')}}"">Reviews</a>
+        <a href="{{url_for('contact_page')}}">Contact</a>
+      </nav>
+    
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    
+      <form class="search-bar-container" action="">
+        <input type="search" id="search-bar" placeholder="search here....">
+        <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+    
+      </form>
+    
+    </header>
+    
+    <!--login-form-container-->
+    <div class="login-form-container">
+    
+      <span class="fas fa-time" id="form-close">&times;</span>
+    
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    
+      </form>
+    
+    </div>
+    
+    
+    <section class="gallery" id="gallery">
+    
+        <h1 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h1>
+
+     <div class="box-container">
+        <div class="box">
+            <img src="http://www.tourist-destinations.com/wp-content/uploads/2013/04/siteImage.jpg" alt="">
+            <div class="content">
+                <h3>Gateway Of India</h3>
+                <p>The Gateway of India is an arch monument built during the 20th century in Bombay, India. The monument was erected to commemorate the landing of King George V and Queen Mary at Apollo Bunder on their visit to India in 1911.</p>
+                <a href="https://mumbaicity.gov.in/tourist-place/gateway-of-india/" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.CpxyUtcAIh8MUj77iF8EpAHaEo&pid=Api&P=0" alt="">
+            <div class="content">
+                <h3>Dagdusheth Temple</h3>
+                <p>The most endearing deity to the devotees. Shreemant Dagdusheth Halwai Ganpati is the epitome of pride and honor to the city of Pune. Devotees from every part of India and the world come to pray.</p>
+                <a href="https://www.dagdushethganpati.com/" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.holidify.com/images/cmsuploads/compressed/maxresdefault(2)_20171109124643.jpg" alt="">
+            <div class="content">
+                <h3>Lingmala Waterfall</h3>
+                <p>Take a moment to appreciate the untouched, unspoiled, and unexplored beauty of Lingmala Waterfall on your Mahabaleshwar tour. </p>
+                <a href="https://mahabaleshwartourism.in/lingmala-waterfall-mahabaleshwar" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://images.thrillophilia.com/image/upload/s--oALkRdBQ--/c_fill,f_auto,fl_strip_profile,g_auto,h_600,q_auto,w_975/v1/images/photos/000/273/182/original/1589975068_1586771207_shutterstock_1158772078.jpg.jpg.jpg?1589975068" alt="">
+            <div class="content">
+                <h3>Tiger's Leap</h3>
+                <p>Located 8km away from Lonavala, Tiger's Leap is a popular tourist point. It is a cliff top with a sheer drop of over 650 m, offering a comprehensive view of the hills and the Western Ghats.</p>
+                <a href="https://www.holidify.com/places/lonavala/tigers-leap-sightseeing-2639.html" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://www.tourmyindia.com/states/maharashtra/images/best-time-to-visit-ratnagiri.jpg" alt="">
+            <div class="content">
+                <h3>Jetty</h3>
+                <p>From this jetty you catch konkan sevak ship ferrying from mumbai to panaji it is 10 hours soothing journey on a ship especially if you are on the deck and a fullmoonday it is very enjoyable</p>
+                <a href="https://www.flickr.com/photos/90427955@N07/16332769983" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://ik.imagekit.io/5tgxhsqev/backup-bucket/tr:w-1650,h-762,q-80/image/upload/bl1pnwt2xrlpz0abmfpl.webp" alt="">
+            <div class="content">
+                <h3>Verandah by the valley</h3>
+                <p>SaffronStays Verandah by the Valley is a gorgeous 2-bedroom home that overlooks the Panchgani valley, easily accessible from Mumbai and Pune</p>
+                <a href="https://www.saffronstays.com/view/verandah-by-the-valley-hill-top-villa-overlooking-valley-in-panchgani-near-table-land-Z1TPs77Xm7nTKonB?rooms=2&adults=4" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://cdn.getyourguide.com/img/location/5a085876d1229.jpeg/88.jpg" alt="">
+            <div class="content">
+                <h3>Bibi Ka Maqbara</h3>
+                <p>Bibi Ka Maqbara, the burial place of Aurangzeb’s wife, Rabia-ud-Durrani. It is an imitation of the Taj at Agra, and, due to its similar design, it is popularly known as the Mini Taj of the Deccan.</p>
+                <a href="https://asi.nic.in/HI/bibi-ka-maqbara-aurangabad/" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/d9/82/09/d9820916a565a738282f7cf664520278.jpg" alt="">
+            <div class="content">
+                <h3>Infant Jesus Shrine</h3>
+                <p>They come with faith and devotion and place their burdens and prayerful intentions at His feet.They go back renewed in grace and touched by His love and healing.</p>
+                <a href="https://infantjesusnashik.org/" class="btn">Explore</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="https://images.thrillophilia.com/image/upload/s--La434wdK--/c_fill,g_center,h_450,q_auto,w_752/f_auto,fl_strip_profile/v1/images/photos/000/255/977/original/1589029839_Raigad_Fort.jpg.jpg" alt="">
+            <div class="content">
+                <h3>Raigad Fort</h3>
+                <p>Raigad is a hill fort situated in Mahad, Raigad district of Maharashtra, India. It is one of the strongest fortresses on the Deccan Plateau. </p>
+                <a href="https://www.tripadvisor.in/Attraction_Review-g2531523-d1536727-Reviews-Raigad_Fort-Raigad_Raigad_District_Maharashtra.html" class="btn">Explore</a>
+            </div>
+        </div>
+
+     </div>
+    </section>
+    <script src="{{url_for('static', filename='javascript/script.js')}}">
+    </script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Travel Guide</title>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+      <script src="https://kit.fontawesome.com/37e77d9f7e.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="{{url_for('static', filename='css/package.css')}}">
+    </head>
+    <body style="height:100vh;">
+    <!---HEADER--->
+    
+    <header>
+      <div id="menu-bar" class="fa-solid fa-bars"></div>
+    
+      <a href="{{url_for('home_page')}}" class="logo"> <span>T</span>ravel</a>
+    
+      <nav class="navbar">
+        <a href="{{url_for('home_page')}}">Home</a>
+        <a href="{{url_for('package_page')}}">Packages</a>
+        <a href="{{url_for('services_page')}}">Services</a>
+        <a href="{{url_for('gallery_page')}}"">Gallery</a>
+        <a href="{{url_for('reviews_page')}}"">Reviews</a>
+        <a href="{{url_for('contact_page')}}">Contact</a>
+      </nav>
+    
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+    
+      <form class="search-bar-container" action="">
+        <input type="search" id="search-bar" placeholder="search here....">
+        <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
+    
+      </form>
+    
+    </header>
+    
+    <!--login-form-container-->
+    <div class="login-form-container">
+    
+      <span class="fas fa-time" id="form-close">&times;</span>
+    
+      <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>forgot password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">register now</a></p>
+    
+      </form>
+    
+    </div>
+    
+    
+    <section class="packages" id="packages">
+    
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+    
+ <div class="box-container">
+
+            <div class="box">
+                <img src="https://cdn.britannica.com/26/84526-050-45452C37/Gateway-monument-India-entrance-Mumbai-Harbour-coast.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Mumbai </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Amanora_Skyline.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Pune </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRYVFRYYGRgaGRgaGBwZHBgYHBoYGBoaGRgYGRkcIy4lHB4tIRoYKDgmKy8xNTU2GiQ7QDs0Py40NTEBDAwMEA8QHhISHzQrISs1MTY0NDQ0NDQ2NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAwECBAUGB//EADsQAAEDAgQEBAQFAgYCAwAAAAEAAhEhMQMEEkEiUWFxBTKBkROhsfBCUsHR4RRyBjNigrLxFcIWI9L/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAqEQACAgEDAgUDBQAAAAAAAAAAAQIRAxIhMUFRBBMiMmGBkbFCccHR8P/aAAwDAQACEQMRAD8A+zIQhAAhCEACEIQAIQhAAhCEACEKCUAQ4qkqHOS3OVUKxriqB6oHqpcgCznqA9KcVTUnQrNfxFUvWUPU6kUFji9VJVA5TKpIVk6UWRqVSqJLXU/CKljVoaVLdDohjaK8KWq0KGxpCnNVH4NFoAUosek5j2FZcVi7JbcLJiYQVqRLicnQpW3QEJ6hUdhCELE1BCEIAEIQgAQhCABCFBKAJSMRyHvSXvTQmDnqjnqjnpbnKgGF6jUklyNSCRhellyqXKspoBgcmtSAE/DaUwGsYpcxWaYuqufNkrHRUNTWYKgMKa0obFROlSGqAUxSOisJiEJDRKEKCkMW4pWIN08NS8YKrEc6ChOkIVaiKOkhCFmaAhCEACEIQAIQhAEKjymKCEAZnJTwtnwwoOGE7FRznNVCwrecupGAnYqOf8Mo+EV1PhBT8MIsdHMblyVoZlQtOlEpagoSMuE1jAFMqCUWBR7JUMwwFeFAqUwJlQmvFEqUJiYAqwekueqa0UFmkvVfiJGtRKKCzY0kq4CRhYwsnagkxoklZMZ6diPWPFehCbF6kJcoVEnaQhCg0IQlnGbbUPcI/qGfmb7hADUJP9Sz87fcK7Xg1BB7VQBdCEIAEIQgAQhUe8ASUAWKiVRmM11irSkBMoJVZUEoAkpZcofjNFyFT+ob+YJgM1qNaqMRp/EPcKxQBPxFTVVBVZQIu95SXPQ7EAuQkOzLOfyKpCYwuUakn+qZz+RVm4zDQEIsRJxFHxFYtCWWBPUgosMRWGOQl6QvL+M/4py7WPa4kRhuc+zoYXnC08DiQ4ug0sJM0MDaoEj1LswlOxV43K/40w/iYrcVgbobht14YB+K/iDiK0Ae17RJNr1Ss9/jRumMPDOqfxuEATSdO8dfdZvLBdRU2e2+IoXyr/5LmtsV3roP/qhT58B6JH2V3iI2HuVgx864zxQDsKLHiP2S3vW1Im2xjsU80fFWZzlXUgRrOKqfGPbss5eqaigdHTwfFXtpOof6q/Nah43P4QD3kLg1UYkgSk6KtnfPjDv9Psf3V2+Nt3bHrT6LzQxkF45ooNTPVDxUG0JONndVz6LzbMTqEw445ezv4RSC2dv4+4KYPESNwe689/Ut31ekFLxMw2eEn1A/dFBZ6dvinMA9jCpjeJTRtPaV5YZn191V2ajonpQaj0BxuqqcRcIZun6o/q3CsosR3NalmORYkdl5t/iTuaQ/xJ5/FHZOmI9l/wCTLaOLZ60KyY3jjLF4H9sn5heNe8mpMnrVUdiFLSgtnqX+L4ezj7FLHi7PzR3B/QLy5xFQ4ipIVnqH+Ms/1HsI+qS/xobNPqR+i88MVQ7FSk1FW+BHfZ4+8bD0J/WVD/8AEWNzYB2/VeTf4gHGGkmLwsr3Pm7jSx0jnFzNYXJPxUbqKsFZ287/AInzmp2h0Cw0tYSRF+MxN7DkvPDwxjyHYuvVIgvxJs4uADIiJJMClStmHihlXRq/KCSAaXMVPSyx5jxIh+kNE0E1NTUXvdcrz5JNpGsW26VDXZXDBJfLiSbTFXOeT3l7j6qzsmx8S3hGxJhcweI4pJgEnYAfYWjKHFf59TKXPyAmqlwlzKQ2qW7OjoGwHyQkNwDu907/AHKFnS7kUu59IL1ZuKsxcqr2bJNXxOyV8RK1KHOSsZc4iBjrM4p+Xe2OKJ27Ib2GhjHzuqZjFmEPxmbRAuY2XOfjyaWUxVuxse9yX8RJ1lU1rVEmrWql6RrVXPQM0fEVHPSA5WxRAHNJtIKGhyq+FQgtFd0Zd4uR78uZUuXVBROvkqvcYkiinVreDZu3sVbMGARt3ChzpodGNzpKAUlzgIU4eKK9/ktHIS3LPfyVS37MKNYJoFDyByjeVnLJXwDRXVelksv5BAfEgCSax09VzPFtZaG4dZnVFidq9JM/9rF+LV0iTpgGJp7/ALLmZ8vcA0P0kmKg1kwA0Cp+SyZLw58gvoacIcbTcwJt1/ju5bKjUCAOGpJPIdT8hX3XFmztytu/wBzsp4dxkvc4gAwGS1otPFee1k80hrWQBABdLrRUl1ac+a6mLmGMnUI4TNrSCaDt6UFVgzWILscAS0EAgiJmh/iVh5spO2W22ZsDC0SXO1E9KNPQmvKqxYuV14oxCQG7UvYHccvktuWwAYOITOow3mBNam3cC3MqudxiIaxszAOkA1cYnt1FKGVak1L5EtSewzEAYbARbU2Z3rzrN0zDwx5nTQkxEdqzsf1TMrg8Ot9XAkiTtuTPTv0WfO50CsQ2kNsaTxCZpbkobbdENO9x7sbC3ZhzvIfPrVCw/Ge6oIg24v2Qp0/LK2Ppr8BhqCesKBlWnc/fouUPGH9PmVZ/jD9hy7ei9esg7R0HZQcz7gfpVLxcmAJ1wOu37rD/AOWfWgr8uqyYmceYl3Tb5804xydWFo6D2sH45jkJ/hJ1Mnzx3b/KwufNTVKLlqovuKzo4uKANLTNa0WVzln1IL1SVAOL1UuStajUnYDdahzqJJepmUNjNGAfb9lUvJIJvsPokHG225KcHEaXE8gSOptb1Wcn1GhuZxySATalP3VTiDRBBkmT2pAPzWQul7WiTX/tWzTgDQiOtfZLZUgNOA8N43mDsNz/AB9904mbLyQKAV9lix820vLQ6YEjqOc2ScLGbxHVFvbfuenRT6fc2Fjnv3mv3KRlpc4RUUJ6U3Pt81dmWLuJ5hhFGgEuPJ02A6RvcJzMAbv4AaNbQUFQXbrDL4uMdo7smxpf+UT9Ep+ADDnu6wLepUZjNMaBqNNm+UQOY3HRc/MeKOPlhp5iDPULhcsmR2w5N7nkGkCdzc8qbivQBY8xm2sNXFzrcoj7+iy4eae6kyamGi178z67LoZXw3VpccOX14iOGtexIrBjf2ahT9RUYSk6QnKa8RwAOlpvUF0CpLuQia9KFdJuIWgsAaOEOc6AJpxE8gBMCREpjsMYc63VgmRPPbkII+6LnHOOIMAi1qw0h1xp3tA6Sol6tlwOUdLonFw9Ze6WyRLdLYdoFbk1I2PdLbhtbxPcQAGjiJAPCIBmhMCpk77yl5jG1OeIEOJD3aQ+XDzAF1NJM22p1KcbNANY52htTpAbQkGukHtJPOeauKYJnVZlWvaCHO0zSjAD1EgqM25uGOpFCeIkzuf92/LpK5eW8ffAbqaGikuFT1klLzWbe+mqk6rTHKPf5BU8UnzwdEkmkkbnZgksa7VxCQakOpJFjFJquV4lmWNcQ7VpMNLhJbUEu0nnMT02lZMxjYr3F5IJAdpImBQ6QAfQT+wXKzxxHCHDy+UkHUQSS6vczstseBXuzHQ0dd+ewwYGMWgQIDuQifLvf1QvMua7kULo8iHf8E6D69r5K2tZi9WGIusyHjFVS9J1wq/EKKGaXYk0VCUn4hUfEQA7UqlwStSC+vJAxmtQXpWpQXIsBwdPRWDwTANOayOfsquJ5hS9xj3kiVRzoqaIbmCLofjBw62HTlElRbHRXDxNLtZIEA3pffouL4lmi5xJIAsBMg8j1uug7KPxHOB0hgipg/Lvz5LFnGOaeFsMEidVTW8949rLmyZot6UF9DjtxHajNmxSojoIMe6Y3NOrpaYJrEy7qPfos7gXkNbbdx5Tt8/4W/Ay4A07Uq7iNOY22olKlyI6eV8THww3SSQACG6gCep0gz6/uc2J4hiuAAYGgWmABNoHvdJxMWAIMxtI2vAiptS3dVdggTI50GmTtU/h2p9jBQindEisfMmDPG4k1tYxQXuqNwnu8zSwCbuAFLzW1Oia7HAhrYrIEE6jvFD/ANrZkGtPG4CLsMWcDUhpEXFHbRTppelXRcIuTpGvwvA0SSziNAILe8l0GP5XbGI5o1PdDtgOEduZ9fmuVl8yZJjeA65HblPNMfnjW0HmARJpIpdc8k5M7lHRClyUxsTWAHO49VS6wbagmtYBG0LC57WmCSW1LRpAgtrUmKzp4d42RitjSAYaCJBc1vDaI5i+194gYNDnNDoBh0ukU1Q6XAHbSwWrMxejhDvwcIw5gu4muDaEhzWjibQGkESYuZt2lWexWtYZ4mmHSSXQ4CA0EbcL/pRcrDwNbnNIgtcdUEkAiILYoZAInt0W3N4IeG4TWkO0kucZdTUXmKCTOp3IAneV06IxaRSi+TOwANAkGaiwNa2W3Bzb2gaakeUOM05BLbkwzhl0Ab09CFYZebGt/wDv5Km0zdWdnB8SYW8TJJvppFttj2T/AIDHiYMf6wZjoR+q8y8uBiBIGxp7rblc2BGo9wJn6rOWPqiozfDOg7I4X5QfV37IVf6vD5H2Z+yFnT+S7R1y4qC/qluconqvXPOGfEPNQ56q1wTGYWo/Y9EnJLkCGNmpV4GyYGi8D6ADkOiyYj1nq1MBjsVVc+alIc/e/L90EkVP7JjGakF6VrJ5qCixl3YqqX9kfDdy6CVfL+Gu1Fz30rLQIAHcrGXiIR2sBL9ZB037rh4mTzDnlsRfiLgYIN4FeVI/j1LscNGnD7T93useNihsEwBFSe9BA9ad1yy8S5S2QrG4L3NY1pdqiNTiBLjziv6rmZ9wLnF9YFLwBXl3Cs7NXDSRAN6V2gXWF+EXw1x2BmbwSY0gzWgrzPRZwi7uWwkQMYA6WjTzAbHIGP4+oV2P11JDWjnF6/wtHwtIG9TBEggbilYNKTsLJGJj/hY243IDeVdlrafAyozDQbW3MuPWOVaLLm83UASZ3bcA3NNrfcE20DVqdBF4ZAAM04jsTFPSbIx/hisEREuGqDMRxE/cH1tJJjE4GC8xpaQCWmQ5rTS9TTsBNq3r1MBkCnoKnbaTzn27LHknjEeMNpOkeYUqDQ+s72XWfgNY8siA2BA7A06VFVOWT4Zvg9zNWBiw20UjkZ3PX1WZuE1ztRdJAdpHUjkDXep59oZmRAkmIFCPXfmseWcWkvubciG7xylYRR1TVqhmLl3OxHPbxAAgSDAI8pvwiduXdc/L4OOC4NYHM68IF+VzLjPfai6uTzEvAdSbD9L3XZ+G1gLnUBER87DdPW4vTVkLFFo43hnhjcNmp3mNSbSazIiI6JeZxGA67kCkWJAiJsE7xLxSoaxrne0N5ucdtr8wsDc0x1XEF3OsWqQCYbUWEJqMm9UiHFaqvYpiP1kuivOo1HqJNUnEeRbeO/WqZmc0wSW7AeU07nmP3C5+CdbuJ2loBc4i+kchzJIA6kLeK2sltInGFZJnp9VX+nJLXamhrrlzmgNNdQOrzGhgbj1SXY0mggVgA7bCd13fBxqGlulu51MDpAHCJLpmZGwgxsE3LSrM5yoxY/hWOHEAAi4hwitYFeqF28NwAAdwncNsDyFELm8+XwZeazQ0qupUDlAK9cga13L0W/MsLGt08qkc+ZV/DMpTU6hNv7f5+ndWz7hvHULnlkuWlFVsYG5n83P+FnzGIL3HSv0UYz2fhCyueOvvFVdbWhId/UNpIr1/crU3E11NI+fSFyHajQDVxQRd1qXvt7911stg6auEcwD9VyyyOO7ZTpFzgF0Rb7ilJUsww0TuDTflZVxM00FrXODZMDtSpdtPJM1hvk4jzMR6dVzZM85fsRYzDJFSKVpbtJ3tYJT8wX02F4ALegHVUDCavP361Sc5mWtETLtgP22WEYtsBeYzsQ1kSaExNLC1qke6y/EcRJNe1ouYm/JZmkNNRJvWBJN5MxzH/SH4paONsGw/FbYwa/x2XSoJbIC7zMOLgTUtuBI3lxnfks2NmoIAA1G8GsbxPm7kmO0qr3k7DqQQ48w6PU3tCxMqQA0atJdPmIEXDrA+U8qH13hC+SkjViZ5wgl1AbAipF5r5bGwv3jPj5pzuEucHG0ad6VA2paZHss+Ll36hJkiwJBrFJEQLfcKX4ANLug3vTikNidz1WqjFFbF8bGAqJNZAMxtBqDaop9CqYL34jg1p4jNDSRWabiNJpyK24PhTSGh7i501aBTTBgapnYA9xHNep8L8PYwB2gC811b3kkwJE1P0WeTNCC7sVoPCPCW4DOFvE4DU4TxRcCRQdOyz+JsAxTFJAPuAF1czmwGkiaV5SL778/1XCxMWRLgaWqbVMAbjalt424YuU5OUi8UlGVsnGxDBk7T22ska5ZM2IAoN/mT3SsznmaTxAGBQ0J7fskYOMHAFhkHbtz5WW8YOrOyUtzpeHY4Y1z9LS7YkVbFxPv7LmZ7xF73EucQKdugCz4eac3E0uENdNAZMtPmjkYI9BZPzGXLml7Khp4hSk119ufae2qioyt9TOUtjmuxTN+Goqbki8fqrs1OkNE0J5UFySaAdVHwnF3w9Mk0AoZmtI9II6LrYfgdWEuLmkSYEPdFQ1rSIDppJPWllpKUVyZOdDMh4I5wa9r2lwc0wDPARXcbgi9Z9V08bwdhY9hGmACcQQDqlxhzfxDiHCABNto0tw2tIikRpieFrRpaJFYgc7k81TMY0NOqrbiLHkIm37rilnk3szCU2crw/wAIY151QbaJJdUGZgAe3zNV1c5iBoBbIJsQQ3/aAenPnei5uLmtIeWukgjTzcCYMjlH1SzmGuaA4hlZdd0bSBcolqm02Q5Ns3fEbu4TvUfuhY25PL744ms//W68qU/LXcVmmZT8uwEyfKL8u0pDX8qLXkXiCDc2B5L1JSpFpHYwscRK5XiTdTplWe/SBH8ydlGNh6hIKw2i9Vly3VmB7gK0PrbkpwsDWJdQWrSfdaG4IbU1qIJrHYKhzJLqTGxP4ppDR+qxyeK6R+5nY1jGsoBFLiATHMq+qbVI3P4Zi3I781z83iuFBfcTWBuTsq4HiNIcDv5QSKen7/JcumUvUFM0Y2C0u1OMmzABT9ZM8lrw2noTSkwBy7n5LFh47TxCpMXNfSbFZMzn/wAAJ03mobT803FgkoOToB3ieJsxx5udw1H5RPrt/OHDMGZhtwBXoSZHQ3/hLDieKBApUCTE0AkkknkBMe2QYrnOB/CQTqNBJ2paoJjkRK6Y49qCjW98GxgTxEwaUIE9+64+be57iGjtvv1sK7c+y2u1unUKSLwCSJkAHqQPS6XjZVzSQXSCTWjaF7mhxN66Sex9FvBKLspFWP4SXWBB/FEtA1S4Vsdvmn4MANDgGuOoNMFpfMHTpH4dpMXvcLI/FkAYYgNiBMF2znFosKn2C6L8qXuaSCQI0gDSGAmXRzEWMiycmlyUzGC4uDQKi4gOGktmdVokATv7rblsm1mkv0l28tJ0yRBg01GAPotuVy+HhuADW8ILdTjFyTQG8zWT6K2MeKC0EDhBIqQeQ29K3ospZb2jwS32N/hmAHuBvpgiWge7qCwNBNx6783jlp1bRWY68yBy+7pwmBjAwEg6W2IApF+vtcrJmXkMB4ZBA4a8xpB5T3uuJrVL4JF4+dNQ/ho1xNyBQy1oFQKWO+91haQSWyBRwhtpkTIgCRBt+a8yjN4OrU17tIiXQYdcgCJINDSVjwnacRrSBeQ5oppItJJkmRO/DXddUYLTsaQ9yL53KtND1j6LN4flPh4wJI0kGfZdfOsBj09qyjL5AuewOEiagGJAAIANhMxMIjkqNWdk6T3KFgcXOIq1z22Mljg0z1q11e6f4X4a/wCIHtLThw43IJoQWFrhOr5WgrpMa0HSwCTpNQPKBANa2mprSig4g0iJI1wy4pAkkigJJoByhY+c2mkcsstqkBw2xBjSHBzAGNJbA8rXDYmSDebylhzWNHEOIwJvQAcPMQDMC7oTG4oc0VFbQRc3NpJn3hJzTZaNLBQeaguJc4u2M1k9VkpSbqRg2xj8MjEcXEkwDfSysRDpoDLttj65c+zS5wcAPxQ6rR7VPoVf+pa54a1usgV3mkbEirXG83VM3huBcHQW6eE8I024Se8+6r9SsGzBjMZpMNg6mkyTBZqDpHt9VTEDXNcYBeXQ2A53CABxBoMVB6VSMpkXBrmucIDuEGeIVkiI52n6KMriBpLnDQRqjiJLYDY0gVmp9uq6a5p2KkMw7C3o1/8A+VK6OBjM0iXlCy8z4YUiZn7CWMaDIv3oFzc1jusXAEGIm/IgCpvbos+DhPcSHUG3M+mw7r0JZCz1eHiAsBJFeoAopZmWu8rmmORn1Xm2YDWkzFaeYxzNqqcTPBoLWxABo0UptP1PUrjnFzfP9Cbs6eZ8QY2h4jWnlE2iDUpGZzznt0t0tmk1ntSVjwXl0F3cN6CI6gV9lJx2weEAG03qKEVFP3SUFHhADGxEySBJrSSKSyZkC1N0Mw9YMuIm0un1g2skvxAGiIJNiKjqZuKEHlQ3S350RA2gTQGvIxPvFgtdMnwN2zRjYgb5SRUNqNW243N7rEcz5jMhzt+VZER8yq42cI3O86pF5HL16qP6vVQzeDeYihqFpGL5aBIHYj3AuAMWgGSDatKC/wByuvl/DwGhrgDqq7zGAJ8rpqK8ovzWbI5Og0RV08UGCxoMkn+6LBdNtgGRAuYDQNJAHK596xEAKZy2qI2+xfGayQKgQJoT1gHaB9lJGKyNgI0gXmQREiwIn59FD2OLiJcQI2Dtgb/duydh4Ml1BpJoINI3kOrWdtjK59l1JF4WFqaSJEuOnTLZJoQ6BUV92rYxoM2sBWPSa2H3zQxxaIG9vU7cz25Kr8QQdJ6BoERG8m8XHSVDbkAh+OAYJ2BNREgxXpQ77qck1r8QVDoM+ore5v8APsuPncN4cS411QJkkiNjPMxbfbfv+CMLcNziazTkQL1Ag2F+iucdMLTBI3YjgbeaZgQADUeprvTouVjYkva1sFrSYmkkCwFhS1Oi05l5DTE1oDYzBHoeUUhc1xcA51dRJPEPLMtEv/KRFJFDO5UYo7AKe3U7WRYih3YHAklp2jeN5skMxi10mTL5DTBLGx5yNpEH0VW4xDQ4Oc6OEA8JbM1Amx0urMxFLLb4P4U3EkvcBaQCAAGEUIbPDq2EeUV2XU6jF6uC47OzbkSzGgNcwSLkB1RNL03XUdhtYINhfaCQQI26+iyjItwKtaJcTctBNKkFokityd0vM4uo1hpDagkQRIgC0GDRcM/U6jwPLl1M04mNhuIcWHyhgdq/AeKu0zOw3SsFxGkOeNM8IB0h2wd1Jmw5Krck5o4pAgwIJkEAzDTBMzbpZLGTaRrc7S0RpAMEmDUAbRHqOiKXcyFZ57WuLgNRkOaaAN/1ChgCLfsr5rLhzWlxcJIcWgirhEfOKdqJukDS1oGnTXU0uhsOIAJsTO5kzVYvD80MTGxS4SGjSAZEB0zT/b81olta6BRD8QamMDnM0jhgGCBzg1iDcduu52CCx2C8u1OaCHWh1+Ei8cPuuX4i0NBaWuIEAaaktmnfqO6bi4rnBrtRlhBjy8NTBBEkVj7Cb3SaEc3L5sMdxGIBhta8Jq7672WjBe4xGkA+Y3JbvyuI2HZVxfDmu0uaYeXEw6ZAJJIA7z7q74aXcWouGmgo00qdvdatxfHI5NdDQ7Ce7iDxBiLbCELnf+WIpeN4aJQlol2FqZVokOJqa1333U4Vn92j05KUK1yNC8Py+g+ifk2DhoPxfQqUKp8MbMmfcdTq/hd/ycsrDf8AuH/BCFpD2lrgdm3H4d+X1So4R6fRCELj6iRnx/P98kZES4A1EtobXGyELX9JXQ9MKMpSv6NWvw9xcDqMxpAmsDSKIQuGXDM2LcOH1H0Ce/8Ayx3/APZCFjLlCRLv8sf3n/gsfiNj1ietroQtIdBnNcOEHegneIbSeS9B4Z5XdlKFWf2Fvgpmtv7vo6iy49cPHmsCnTy2QhRHhEsxZWuC4mpl1TU3O69Hl2jlZrAOgk0QhLPy/qJ8m7MWP9p/9Vxc1+H+5v8AyCELnxdAF+G/5eJ/eD6wKrZmfIP7v1KhCqfvJfJwMLEJbjEkkhogzUUO63spJFCWCTuam5QhdE/99kNGnBuz+0qcxspQsH/JJz3NFabu+oWfB/zX/wC79EIW0eGPp9TjMshCF2gf/9k=" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Lonavala </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Amravati_Court.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Amravati </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://cdn.britannica.com/36/2936-050-79D8CB7E/Ghats-Nashik-Godavari-River-India-Maharashtra.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Nashik </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://www.tourmyindia.com/states/maharashtra/images/best-time-to-visit-ratnagiri.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Ratnagiri </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <img src="https://www.nobroker.in/blog/wp-content/uploads/2022/07/A-Planned-City-in-Pune.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Lavasa </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/d9/ab/25/lrm-export-134359847325165.jpg?w=500&h=-1&s=1" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Panchgani </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Alibag_Fort1.JPG" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Alibag </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+
+    <script src="{{url_for('static', filename='javascript/script.js')}}">
+    </script>
+    </section>
+    </body>
+    </html>

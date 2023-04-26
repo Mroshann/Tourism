@@ -1,0 +1,131 @@
+:root{
+  --orange: #ffa500;
+  
+}
+
+
+*{
+  font-family: sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+  /* overflow-y: hidden; */
+
+}
+
+*::selection{
+  background: var(--orange);
+  color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+section{
+  display: flex;
+  padding: 2rem 9%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading{
+  text-align: center;
+  /* padding: 2.5rem 0; */
+  padding: 7rem 0;
+}
+
+.heading span{
+  font-size: 3.5rem;
+  background: rgba(255, 165, 0,.2);
+  color: var(--orange);
+  border-radius: .5rem;
+  padding: .2rem 1rem;
+}
+
+.heading span .space{
+  background:none;
+}
+
+.reviews .review-slider{
+  padding-bottom: 2rem;
+  width: 75%;
+  justify-self: center;
+}
+
+.reviews .box {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  min-height: 25rem;
+  max-height: auto;
+}
+
+.reviews .box{
+  padding: 2rem;
+  /* text-align: right; */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0,.1);
+  border-radius: .5rem;
+}
+
+.reviews .box img{
+  align-self: center;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.reviews .box p{
+  color: #333;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  font-size: 1.7rem;
+}
+
+.reviews .box .stars i{
+  color: var(--orange);
+  font-size: 1.7rem;
+}
+
+.review-content {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  
+  justify-content: space-around;
+  /* width: 90rem; */
+}
+
+.box .profile p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.review-content p {
+  align-self: flex-end;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  margin-top: 2rem;
+  text-align: center;
+  justify-self: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.profile {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
