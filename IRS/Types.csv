@@ -1,0 +1,88 @@
+PID,POIs,PRIORITY_1,PRIORITY_2,PRIORITY_3,PRIORITY_4,PRIORITY_5
+POI1,Kanheri Caves,History and Culture,Museum,Local Experiences,Scenic,Adventure
+POI2,Gateway Of India Mumbai,Shows and Concerts,History and Culture,Local Experiences,Scenic,Food and Drinks
+POI3,Chhatrapati Shivaji Maharaj Terminus,Museum,Shows and Concerts,History and Culture,Local Experiences,Food and Drinks
+POI4,Taj Mahal Palace,History and Culture,Religious,Scenic,Local Experiences,
+POI5,Elephanta Caves,History and Culture,Shows and Concerts,Scenic,-,-
+POI6,Haji Ali Dargah,Religious,History and Culture,,-,-
+POI7, Siddhivinayak Temple,Religious,History and Culture,,Scenic,Local Experiences
+POI8,Essel World,Adventure,Local Experiences,Scenic,Food and Drinks,-
+POI9,Sanjay Gandhi National Park,Scenic,Local Experiences,Adventure,-,-
+POI10, Aga Khan Palace,History and Culture,Scenic,-,-,-
+POI11,Shaniwar Wada,History and Culture,Religious,Scenic,-,-
+POI12,Sinhagad Fort,History and Culture,Religious,Scenic,-,-
+POI13,Shivaji Bridge,History and Culture,Religious,Scenic,-,-
+POI14,Mahatma Phule Museum,Museum,Shows and Concerts,Scenic,History and Culture,-
+POI15,Bhaja Caves,History and Culture,Scenic,-,-,-
+POI16,Karla Caves,History and Culture,Religious,Scenic,-,-
+POI17,Bhushi Dam,Adventure,Scenic,Local Experiences,-,-
+POI18,Tikona Fort,History and Culture,Scenic,-,-,-
+POI19,Sula Vineyard,Food and Drinks,Scenic,Local Experiences,-,-
+POI20,Dudhsagar falls,Scenic,Adventure,-,-,-
+POI21,Shri Ambadevi Temple,Religious,History and Culture,-,-,-
+POI22,MelGhat Tiger Reserve,Scenic,Local Experiences,Adventure,-,-
+POI23,Shree Ganesh Mandir Tekdi,Religious,History and Culture,-,-,-
+POI24,Swaminarayan Temple,Religious,History and Culture,-,-,-
+POI25,Nagpur Ramtek Temple,Religious,History and Culture,-,-,-
+POI26,Panhala Fort,History and Culture,Religious,-,-,-
+POI27,Karnala Bird Sanctuary,Local Experiences,Scenic,Adventure,-,-
+POI28,Adai Waterfalls,Scenic,Local Experiences,Adventure,-,-
+POI29,Khandeshwar Shiva Temple,Religious,History and Culture,-,-,-
+POI30,Shivganga Waterpark and Resort,Adventure,Food and Drinks,-,-,-
+POI31,Pratapgad fort,History and Culture,Religious,Scenic,-,-
+POI32,Lingamala Falls,Scenic,Adventure,Local Experiences,-,-
+POI33,Venna Lake,Scenic,Adventure,Local Experiences,-,-
+POI34,Mapro Garden,Scenic,Adventure,Local Experiences,Food and Drinks,-
+POI35,Lord Mahabaleshwar Temple,Religious,History and Culture,Local Experiences,-,-
+POI36,Mahabaleshwar Hill Station,Adventure,Scenic,Local Experiences,,
+POI37,Elephant's Head Point,Scenic,Adventure,-,-,-
+POI38,Sri Sai Baba Samadhi Mandir,Religious,History and Culture,Local Experiences,-,-
+POI39,Sai Teerth Theme Park Shirdi,Religious,History and Culture,Local Experiences,Food and Drinks,-
+POI40,Dwarkamai Masjid,Religious,History and Culture,Local Experiences,-,-
+POI41,Dixit Wada Museum,Museum,Shows and Concerts,History and Culture,-,-
+POI42,Shree Sai Hemant Art Gallery,Museum,Shows and Concerts,-,-,-
+POI43,Wet N Joy Water Park,Adventure,Food and Drinks,-,-,-
+POI44,Ganapatipule Beach,Scenic,Adventure,-,Food and Drinks,-
+POI45,Swayambhu Ganpati Temple,Religious,History and Culture,-,,-
+POI46,Ratnadurga Fort,History and Culture,Religious,-,-,-
+POI47,Aare Ware Beach,Adventure,Scenic,-,Food and Drinks,-
+POI48,Ellora Caves,History and Culture,Religious,-,-,-
+POI49,Bibi Ka Maqbara,Religious,History and Culture,-,-,Local Experiences
+POI50,Aurangabad Caves,History and Culture,-,-,-,-
+POI51,Jayakwadi Dam,Scenic,-,-,-,-
+POI52,Prozone Mall Aurangabad,Shopping,Food and Drinks,-,-,-
+POI53,Chatrapati Shivaji Museum,Museum,History and Culture,Religious,-,-
+POI54,Tomb of Mughal Emperor Aurangzeb,History and Culture,Religious,-,-,-
+POI55,Siddharth Garden,Adventure,Scenic,-,-,-
+POI56,Daulatabad Fort,History and Culture,Religious,-,-,-
+POI57,Mughal  Art Palace,History and Culture,-,-,Religious,-
+POI58,Chand Minar,History and Culture,Religious,-,-,Local Experiences
+POI59,Indirasagar Dam (Gosikhurd Project),Scenic,-,-,-,-
+POI60,Korambi Devi,Religious,History and Culture,-,-,-
+POI61,Koka Wildlife Sanctuary,Scenic,Adventure,-,-,-
+POI62,Rawanwadi Dam,Scenic,-,-,-,-
+POI63,Dhruv Palace Hotel,Food and Drinks,Local Experiences,-,-,-
+POI64,Elephanta Island,Adventure,Scenic,-,-,-
+POI65,Siddheshwar Temple Latur,Religious,History and Culture,,-,-
+POI66,Kharosa Caves,History and Culture,Scenic,-,-,-
+POI67,Nana Nani Park,Adventure,Scenic,-,-,-
+POI68,Ganj Golai,Religious,History and Culture,-,-,-
+POI69,Panchbol Point,Adventure,Scenic,-,-,-
+POI70,Bhimkund-Chickhaldara,Scenic,Adventure,-,-,-
+POI71,Mozari Point,Adventure,Scenic,-,-,-
+POI72,Gawaligad Fort,History and Culture,Religious,-,-,-
+POI73,Raigad Fort,History and Culture,Religious,-,-,-
+POI74,Shri Ballaleshwar Ashtavinayaka,Religious,History and Culture,-,-,-
+POI75,Kondana Caves,History and Culture,Scenic,Religious,-,-
+POI76,Varsoli Beach,Scenic,Adventure,Food and Drinks,-,-
+POI77,Tamhini Falls,Adventure,Scenic,-,-,-
+POI78,Alexander Point,Adventure,Scenic,-,-,-
+POI79,Louisa Point,Adventure,Scenic,-,-,-
+POI80,Charlotte Lake,Scenic,Adventure,-,-,-
+POI81,Porcupine Point (Sunset Point),Scenic,Adventure,-,-,-
+POI82,Lakeside Promenade,Scenic,Adventure,-,-,-
+POI83,Table Land,Scenic,Adventure,-,-,-
+POI84,Dhom Dam,Scenic,Adventure,-,-,-
+POI85,Kate's Point,Adventure,Religious,Scenic,-,-
+POI86,Sydney Point,Adventure,Religious,Scenic,-,-
+POI87,Pure Gold Cheese Factory,Food and Drinks,-,-,-,-

@@ -1,5 +1,6 @@
 from Travel import app
 from flask import render_template
+import streamlit as st
 
 @app.route('/')
 @app.route('/home/')
