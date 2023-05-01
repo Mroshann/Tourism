@@ -27,6 +27,7 @@ html{
 
 section{
   padding: 2rem 9%;
+  position: relative;
 }
 
 .heading{
@@ -343,3 +344,48 @@ body{
     font-size: 50%;
   }
 }
+
+.element-block {
+  display: flex;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  width: 100vw;
+  position: absolute;
+  top: 9%;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  left: 0;
+}
+.element-block .cancel {
+  display: inline-block;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.navbar-item:link,.navbar-item:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 2s;
+  color: #fff;
+}
+
+.navbar-item:hover,.navbar-item:active {
+  color:#ffa500;
+}
+
+.welcome_text {
+  position: fixed;
+  color: #fff;
+  font-size: 1.7rem;
+  left: 78%;
+}
+
+.welcome_text span{
+  color: #ffa500;
+}
+

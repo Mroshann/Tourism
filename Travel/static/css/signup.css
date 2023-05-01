@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    align-items:center;
+    position: relative;
+    background-color: #fffdfa;
+}
+
+.sign-form {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    font-weight: 500;
+    color: #e69500;
+    margin-top: -178.2px;
+    margin-left: -240px;
+}
+
+.notification-error {
+    display: flex;
+    transform: translateY(-2px);
+    transition: transform 5s;
+    background-color: orangered;
+    color: white;
+    padding: 0.5rem 3rem;
+    font-size: 1.7rem;
+    gap: 2rem;
+    border-radius:5px ;
+    /* text-align: center; */
+}
+
+.notification-error a:link,.notification-error a:visited {
+    text-decoration: none;
+    color: #ffdb99;
+    transition: all 0.5s;
+}
+
+.notification-error a:hover,.notification-error a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.signup {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.signup  label {
+    text-transform: capitalize;
+}
+
+.signup input {
+    border: 2px solid #ffdb99;
+    outline: none;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    transition: 0.5s;
+    border-radius: 9px;
+}
+.signup input[type="text"],input[type = "email"],input[type="password"] {
+    text-transform: none;
+}
+
+
+
+.signup input:focus {
+    border: 2px solid #cc8400;
+}
+
+.signup-container {
+    display: flex;
+    width: 48rem;
+    flex-direction: column;
+    gap:2.5rem;
+    color: #e69500;
+    background-color: #fff6e6;
+    padding: 2.5rem 5rem;
+    padding-top: 4rem;
+    border-radius: 10px;
+    /* border: 2px solid #e69500; */
+    box-shadow: 0 3px 8px 4px rgba(206, 200, 189, 0.5);
+}
+
+.signup-container button {
+    flex-grow: 0.5;
+    margin-top: 2rem;
+    width: 50%;
+    align-self: center;
+    border-radius: 0.5px;
+    background-color: #e69500;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border: 1px solid #996300;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.signup-container button:hover {
+    color: #e69500;
+    background-color: #fff;
+}
+
+    

@@ -1,41 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
-    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-    <title>Contact</title>
-</head>
-<body>
-  
-  <header>
-    <div id="menu-bar" class="fa-solid fa-bars"></div>
-  
-    <a href="{{url_for('home_page')}}" class="logo"> <span>T</span>ravel</a>
-  
-    <nav class="navbar">
-      <a href="{{url_for('home_page')}}">Home</a>
-      <a href="{{url_for('package_page')}}">Packages</a>
-      <a href="{{url_for('services_page')}}">Services</a>
-      <a href="{{url_for('gallery_page')}}"">Gallery</a>
-      <a href="{{url_for('reviews_page')}}"">Reviews</a>
-      <a href="{{url_for('contact_page')}}">Contact</a>
-    </nav>
-  
-  
-    <div class="icons">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <i class="fa-solid fa-user"></i>
-    </div>
-  
-    <form class="search-bar-container" action="">
-      <input type="search" id="search-bar" placeholder="search here....">
-      <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
-  
-    </form>
-  
+{% extends 'base.html'%}
+{% block head%}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/contact.css')}}">
+{% endblock %}
+
+
+{% block content%}
   </header>
       <div class="container">
         <div style="text-align:center">
@@ -62,7 +31,4 @@
         </div>
       </div>
     </header>
-    <script src="{{url_for('static', filename='javascript/script.js')}}">
-    </script>
-</body>
-</html>
+{% endblock %}

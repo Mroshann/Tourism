@@ -1,62 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-      <title>Travel Guide</title>
-      <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-      <script src="https://kit.fontawesome.com/37e77d9f7e.js" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="{{url_for('static', filename='css/reviews.css')}}">
-    </head>
-    <body style="height:100vh;">
-    <!-- -HEADER- -->
-    
-    <header>
-      <div id="menu-bar" class="fa-solid fa-bars"></div>
-    
-      <a href="{{url_for('home_page')}}" class="logo"> <span>T</span>ravel</a>
-    
-      <nav class="navbar">
-        <a href="{{url_for('home_page')}}">Home</a>
-        <a href="{{url_for('package_page')}}">Packages</a>
-        <a href="{{url_for('services_page')}}">Services</a>
-        <a href="{{url_for('gallery_page')}}"">Gallery</a>
-        <a href="{{url_for('reviews_page')}}"">Reviews</a>
-        <a href="{{url_for('contact_page')}}">Contact</a>
-      </nav>
-    
-    
-      <div class="icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-user"></i>
-      </div>
-    
-      <form class="search-bar-container" action="">
-        <input type="search" id="search-bar" placeholder="search here....">
-        <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
-    
-      </form>
-    
-    </header>
-    
-    <!--login-form-container-->
-    <div class="login-form-container">
-    
-      <span class="fas fa-time" id="form-close">&times;</span>
-    
-      <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email">
-        <input type="password" class="box" placeholder="enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">remember me</label>
-        <p>forgot password? <a href="#">click here</a></p>
-        <p>don't have an account? <a href="#">register now</a></p>
-    
-      </form>
-    
-    </div>
-    
-    
+{% extends 'base.html'%}
+{% block head%}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/reviews.css')}}">
+{% endblock %}
+
+{% block content %}
     <section class="reviews" id="reviews">
     
         <h1 class="heading">
@@ -221,7 +168,4 @@
     </div>
 
     </section>
-    <script src="{{url_for('static', filename='javascript/script.js')}}">
-    </script>
-</body>
-</html>
+{% endblock %}

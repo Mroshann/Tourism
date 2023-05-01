@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/signup.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<form class="sign-form" action="/signup" method="post">
+    <h2>Register</h2>
+    <div class="signup-container">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="notification-error">
+                <span class="fa-solid fa-circle-exclamation"></span>
+                <span>{{messages[0] }}. Go to <a href="{{url_for('home_page')}}">login page</a>  </span>
+            </div>
+        {% endif %}
+        {% endwith %}
+        <div class="signup email">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="signup username">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="name" required>
+        </div>
+        <div class="signup password">
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <button type="submit">Sign Up</button>
+    </div>
+</form>
+<script>
+    document.querySelector("#email").focus()
+</script>
+{% endblock %}

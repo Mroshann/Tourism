@@ -5,6 +5,8 @@ let loginForm = document.querySelector('.login-form-container');
 let formClose = document.querySelector('#form-close');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
+let cancelButton = document.querySelector('.cancel');
+let error = document.querySelector('.element-block');
 
 let searchBtn = document.querySelector('.fa-magnifying-glass');
 let formBtn = document.querySelector('.fa-user');
@@ -28,8 +30,14 @@ searchBtn.addEventListener('click', () =>{
 
 formBtn.addEventListener('click', () =>{
   loginForm.classList.add('active');
+  document.querySelector("#email").focus()
 });
 
 formClose.addEventListener('click', () =>{
   loginForm.classList.remove('active');
 });
+
+cancelButton.addEventListener('click',()=> {
+  console.log('hello');
+  error.classList.add('hidden');
+})

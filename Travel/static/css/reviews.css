@@ -57,6 +57,11 @@ section{
   padding-bottom: 2rem;
   width: 75%;
   justify-self: center;
+  
+}
+
+.slider {
+  margin-bottom: 2rem;
 }
 
 .reviews .box {
@@ -64,13 +69,14 @@ section{
   grid-template-columns: 0.5fr 1fr;
   min-height: 25rem;
   max-height: auto;
+  background-color: #fef5ef;  
 }
 
 .reviews .box{
   padding: 2rem;
   /* text-align: right; */
   box-shadow: 0 1rem 2rem rgba(0, 0, 0,.1);
-  border-radius: .5rem;
+  border-radius: 10px;
 }
 
 .reviews .box img{

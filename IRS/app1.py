@@ -58,7 +58,6 @@ selected_travel_name = st.selectbox(
     # format_func=format_text
 )
 
-
 if st.button('Recommend'):
    names,posters =recommend(selected_travel_name)
   # st.write[i]

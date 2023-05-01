@@ -1,53 +1,41 @@
-<html>
-<head>
-  <title>Travel Guide</title>
-  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-  <script src="https://kit.fontawesome.com/37e77d9f7e.js" crossorigin="anonymous"></script>
-</head>
-<body style="height:100vh;">
-<!---HEADER--->
+{% extends 'base.html'%}
+{% block head%}
+  <link rel="stylesheet" href="{{url_for('static', filename='css/signup.css')}}">
+{% endblock %}
 
-<header>
-  <div id="menu-bar" class="fa-solid fa-bars"></div>
 
-  <a href="{{url_for('home_page')}}" class="logo"><span>T</span>ravel</a>
 
-  <nav class="navbar">
-    <a href="{{url_for('home_page')}}">Home</a>
-    <a href="{{url_for('package_page')}}">Packages</a>
-    <a href="{{url_for('services_page')}}">Services</a>
-    <a href="{{url_for('gallery_page')}}"">Gallery</a>
-    <a href="{{url_for('reviews_page')}}"">Reviews</a>
-    <a href="{{url_for('contact_page')}}">Contact</a>
-  </nav>
-
-  <div class="icons">
-    <i class="fa-solid fa-magnifying-glass" ></i>
-    <i class="fa-solid fa-user" ></i>
-  </div>
-
-  <form class="search-bar-container" action="">
-    <input type="search" id="search-bar" placeholder="search here....">
-    <label for="search-bar" class="fa-solid fa-magnifying-glass"></label>
-
-  </form>
-
-</header>
 
 <!--login-form-container-->
+{% block content%}
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="notification-error element-block" >
+      <span class="text-error">{{ messages[0]}}</span>
+      <span class="cancel">&times</span>
+    </div>
+  {% endif %}
+{% endwith %}
+
+{% block user %}
+  <span class="welcome_text">
+    <span>Welcome,</span> 
+    {{ username }}
+  </span>
+{% endblock %}
+
 <div class="login-form-container">
 
   <span class="fas fa-time" id="form-close">&times;</span>
-
-  <form action="">
+  <form  method="POST" action="/home">
     <h3>login</h3>
-    <input type="email" class="box" placeholder="enter your email">
-    <input type="password" class="box" placeholder="enter your password">
-    <input type="submit" value="login now" class="btn">
-    <input type="checkbox" id="remember">
+    <input type="email" name="email" class="box" placeholder="enter your email" id="email">
+    <input type="password" name="password" class="box" placeholder="enter your password">
+    <input type="checkbox" name="remember" id="remember">
     <label for="remember">remember me</label>
-    <p>forgot password? <a href="#">click here</a></p>
-    <p>don't have an account? <a href="#">register now</a></p>
+    <input type="submit" value="login now" class="btn">
+    <!-- <p>forgot password? <a href="#">click here</a></p> -->
+    <p>don't have an account? <a href="{{url_for('signup')}}">register now</a></p>
 
   </form>
 
@@ -58,8 +46,7 @@
   <div class="content">
     <h3>Adventure is  worthwhile</h3>
     <p><i>discover new places with us, adventure awaits!</i></p>
-    
-    <a href="http://localhost:8501/" class="btn">Recommendation</a>
+        <a href="{{url_for('recommend')}}" class="btn">recommend</a>
   </div>
   <div class="controls">
     <span class="vid-btn" data-src="video.mp4"></span>
@@ -70,61 +57,4 @@
       </video>
   </div>
 </section>
-<!--home section ends-->
-
-
-
-<!--book section starts-->
-<!-- 
-<section class="book" id="book">
-  <h1 class="heading">
-    <span>b</span>
-    <span>o</span>
-    <span>o</span>
-    <span>k</span>
-    <span class="space"></span>
-    <span>n</span>
-    <span>o</span>
-    <span>w</span>
-  </h1>
-
-<div class="row">
-  <div class="image">
-    <img src="{{url_for('static', filename='resources/img1.cms')}}" alt="">
-  </div>
-
-  <form action="">
-    <div class="inputBox">
-      <h3>where to?</h3>
-      <input type="text" placeholder="place name">
-    </div>
-    <div class="inputBox">
-      <h3>how many?</h3>
-      <input type="number" placeholder="number of guests">
-    </div>
-    <div class="inputBox">
-      <h3>arrivals</h3>
-      <input type="date">
-    </div>
-    <div class="inputBox">
-      <h3>leaving</h3>
-      <input type="date">
-    </div>
-    <input type="submit" class="btn" value="book now">
-
-  </form>
-</div>
-</section> -->
-
-
-
-
-
-
-
-
-<script src="{{url_for('static', filename='javascript/script.js')}}">
-
-</script>
-</body>
-</html>
+{% endblock %}
